@@ -12,7 +12,6 @@ module.exports = {
                 "Saliendo del canal, no hay más canciones en la queue.",
                 message.channel
             );
-            message.guild.me.voice.channel.leave(); //If you want your bot stay in vc 24/7 remove this line :D
             message.client.queue.delete(message.guild.id);
             return;
         }
