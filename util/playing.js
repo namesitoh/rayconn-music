@@ -9,7 +9,7 @@ module.exports = {
         const queue = message.client.queue.get(message.guild.id);
         if (!song) {
             sendError(
-                "Saliendo del canal, no hay más canciones en la queue.",
+                "No hay más canciones en la queue.",
                 message.channel
             );
             message.client.queue.delete(message.guild.id);
